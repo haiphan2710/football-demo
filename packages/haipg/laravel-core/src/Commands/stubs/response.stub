@@ -1,0 +1,10 @@
+<?php
+
+namespace DummyNamespace;
+
+use HaiPG\LaravelCore\Core\BaseResponse;
+
+class DummyClass extends BaseResponse
+{
+    //
+}

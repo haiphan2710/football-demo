@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./grid.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.4.0-web/css/all.css">
+    <title>Ca Cuoc Bong Da</title>
+</head>
+
+<body>
+    <div class="app">
+        <header>
+            <div class="header-topbar grid wide row">
+                <h2 class="header-topbar__logo">
+                    <a href="https://five88.win/" title="FIVE88 -  Nhà cái cá cược bóng đá - lô đề - casino">
+                        <img title="FIVE88 -  Nhà cái cá cược bóng đá - lô đề - casino"
+                            alt="FIVE88 -  Nhà cái cá cược bóng đá - lô đề - casino"
+                            src="//five88.win/assets/img/LOGO_FIVE88.svg?v=11111" width="118" height="64">
+                    </a>
+                </h2>
+                <div class="userlogin">
+                    <div class="userlogin__username">
+                        <input name="username" type="text" placeholder="TÊN TÀI KHOẢN" class="form-control">
+                    </div>
+                    <div class="userlogin__password">
+                        <input name="password" type="password" placeholder="NHẬP MẬT KHẨU" class="form-control">
+                    </div>
+                    <button type="submit" class="btn__login">ĐĂNG NHẬP</button>
+                    <a class="btn__register" href="https://five88.win/register.aspx">
+                        <i class="fa-solid fa-user btn__register-icons"></i>ĐĂNG KÝ
+                    </a>
+                </div>
+            </div>
+            <div class="header-menu">
+                <div class="header-menu__item grid wide row">
+                    <div class="btn-menu">
+                        <a href="" class="btn-menu__link">
+                            <i class="fa-solid fa-futbol btn-menu__icon"></i>
+                            THỂ THAO</a>
+                    </div>
+                    <div class="btn-menu">
+                        <a href="" class="btn-menu__link">
+                            <i class="fa-solid fa-dice btn-menu__icon"></i>
+                            ĐÁN BÀI</a>
+                    </div>
+                    <div class="btn-menu" id="btn-quayso-warp">
+                        <a href="" class="btn-menu__link">
+                            <i class="fa-solid fa-chess-board btn-menu__icon" id="btn-quayso"></i>
+                            QUAY SỐ
+                            <i class="fa-solid fa-angle-down"></i>'
+                            <ul class="quayso-list">
+                                <li class="quayso-item">Quay So 1</li>
+                                <li class="quayso-item">Quay So 2</li>
+                                <li class="quayso-item">ATOM</li>
+                                <li class="quayso-item">NUMBER GAME</li>
+                                <li class="quayso-item">NUMBER GAME 2</li>
+                            </ul>
+                        </a>
+                    </div>
+                    <div class="btn-menu" id="btn-lode-warp">
+                        <a href="" class="btn-menu__link">
+                            <i class="fa-brands fa-wizards-of-the-coast btn-menu__icon"></i>
+                            LÔ ĐỀ
+                            <i class="fa-solid fa-angle-down"></i>
+                            <ul class="lode-list">
+                                <li class="lode-list__item">
+                                    LÔ ĐỀ 3 MIỀN
+                                </li>
+                                <li class="lode-list__item">
+                                    LÔ ĐỀ SIÊU TỐC
+                                </li>
+                            </ul>
+                        </a>
+
+                    </div>
+                    <div class="btn-menu">
+                        <a href="" class="btn-menu__link">
+                            <i class="fa-solid fa-diamond btn-menu__icon"></i>
+                            SÒNG BÀI</a>
+                    </div>
+                    <div class="btn-menu">
+                        <a href="" class="btn-menu__link">
+                            <i class="fa-solid fa-box-open btn-menu__icon"></i>
+                            NỔ HŨ</a>
+                    </div>
+                    <div class="btn-menu">
+                        <a href="" class="btn-menu__link">
+                            <i class="fa-solid fa-gamepad btn-menu__icon"></i>
+                            TRÒ CHƠI</a>
+                    </div>
+                    <div class="btn-menu" id="btn-menu-keno-wrap">
+                        <a href="" class="btn-menu__link">
+                            <i class="fa-solid fa-door-closed btn-menu__icon"></i>
+                            KENO
+                            <i class="fa-solid fa-angle-down"></i>
+                            <ul class="keno-list">
+                                <li class="keno-item">KENO SIÊU TỐC</li>
+                                <li class="keno-item">KENO VIETLOT</li>
+                            </ul>
+                        </a>
+
+                    </div>
+                    <div class="btn-menu">
+                        <a href="" class="btn-menu__link">
+                            <i class="fa-solid fa-chart-simple btn-menu__icon"></i>
+                            TRADING</a>
+                    </div>
+                    <div class="btn-menu">
+                        <a href="" class="btn-menu__link">
+                            <i class="fa-solid fa-bullhorn btn-menu__icon"></i>
+                            SỰ KIỆN</a>
+                    </div>
+                </div>
+            </div>
+            <div class="header-component-warp">
+                <div class="grid wide row">
+                    <div class="header-component">
+                        <div class="component__date-time">
+                            <span class="text-date-time">
+                                Chủ nhật 04/06/2023 19:26:53 GMT +7
+                            </span>
+                        </div>
+                        <div class="component__content">
+                            <div class="content__group-icon-startsearch">
+                                <div class="btn-startsearch ">
+                                    <i class="fa-solid fa-star button-start"></i>
+                                </div>
+                                <div class="btn-startsearch">
+                                    <i class="fa-solid fa-magnifying-glass button-search"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content__title">
+                            <p>AIK Solna - Kalmar: Chúng tôi có tỷ lệ cược tốt nhất cho trận đấu này, hãy xem thử!</p>
+                        </div>
+                        <div class="header__parplay-warp">
+                            <div class="header__parplay">
+                                <div class="parplay__item">
+                                    <i class="fa-solid fa-rug parplay__icon"></i>
+                                </div>
+                                Cược xiên
+                            </div>
+                            <div class="component__btn-interact">
+                                <div class="btn-interact-component-icon btn-interact__reload">
+                                    <i class="fa-solid fa-arrows-rotate interact__reload-icon"></i>
+                                </div>
+                                <div class="btn-interact-component-icon btn-interact__msg">
+                                    <i class="fa-solid fa-message interact__msg-icon"></i>
+                                </div>
+                                <div class="btn-interact-component-icon btn-interact__note">
+                                    <i class="fa-solid fa-note-sticky interact__note-icon"></i>
+                                </div>
+                                <div class="btn-interact-component-icon btn-interact__setting">
+                                    <i class="fa-solid fa-gear interact__setting-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="container-app">
+            <div class="grid wide row">
+                <div class="l-2">
+                    <div class="warp-container-info">
+                        <div class="bestlip-tablelip__info">
+                            <div class="btn-lip btn__bestlip">
+                                Phiếu đặt cược
+                            </div>
+                            <div class="btn-lip btn__tablelip">
+                                Bảng cược
+                            </div>
+                        </div>
+                        <div class="wrapper-bet-slip-bill">
+                            <div class="bet-slip-bill-content">
+                                <div class="group-cuocdon-cuocxien">
+                                    <div class="cuocdon">
+                                        <span>Cược Đơn</span>
+                                    </div>
+                                    <div class="cuocxien">
+                                        <span>Cược Xiên</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="group-bet-slip-empty">
+                            <div class="warp-bet-slip-empty">
+                                <div class="beg-empty-wrap-icon">
+                                    <div class="bg-bet-empty"><svg viewBox="0 0 45 45" fill="none">
+                                            <path
+                                                d="M36.7031 15.4688C36.9873 14.0779 37.6853 12.8055 38.7056 11.8184C39.7258 10.8313 41.0205 10.1757 42.42 9.9375C42.7477 9.88294 43.0455 9.71398 43.2604 9.46064C43.4753 9.20729 43.5934 8.88596 43.5938 8.55375V4.21875C43.5938 3.47283 43.2974 2.75746 42.77 2.23001C42.2425 1.70257 41.5272 1.40625 40.7812 1.40625H4.21875C3.47283 1.40625 2.75746 1.70257 2.23001 2.23001C1.70257 2.75746 1.40625 3.47283 1.40625 4.21875V8.5575C1.40587 8.88992 1.52372 9.21164 1.73876 9.46514C1.95379 9.71865 2.25197 9.8874 2.58 9.94125C4.22229 10.2149 5.71425 11.0622 6.79045 12.3326C7.86665 13.6029 8.4573 15.2138 8.4573 16.8787C8.4573 18.5437 7.86665 20.1546 6.79045 21.4249C5.71425 22.6953 4.22229 23.5426 2.58 23.8162C2.25214 23.8712 1.95436 24.0405 1.73948 24.2942C1.52461 24.5479 1.40655 24.8694 1.40625 25.2019V29.5312C1.40625 30.2772 1.70257 30.9925 2.23001 31.52C2.75746 32.0474 3.47283 32.3438 4.21875 32.3438H15.4688"
+                                                stroke="#2FB05B" stroke-width="2.5" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                            <path d="M15.4688 26.7188V23.9062" stroke="#2FB05B" stroke-width="2.5"
+                                                stroke-linecap="round" stroke-linejoin="round"></path>
+                                            <path d="M15.4688 18.2812V15.4688" stroke="#2FB05B" stroke-width="2.5"
+                                                stroke-linecap="round" stroke-linejoin="round"></path>
+                                            <path d="M15.4688 9.84375V7.03125" stroke="#2FB05B" stroke-width="2.5"
+                                                stroke-linecap="round" stroke-linejoin="round"></path>
+                                            <path
+                                                d="M32.3438 43.5938C38.557 43.5938 43.5938 38.557 43.5938 32.3438C43.5938 26.1305 38.557 21.0938 32.3438 21.0938C26.1305 21.0938 21.0938 26.1305 21.0938 32.3438C21.0938 38.557 26.1305 43.5938 32.3438 43.5938Z"
+                                                stroke="#2FB05B" stroke-width="2.5" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                            <path d="M28.3662 28.3663L36.3212 36.3212" stroke="#2FB05B"
+                                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                            </path>
+                                            <path d="M28.3662 36.3212L36.3212 28.3663" stroke="#2FB05B"
+                                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                            </path>
+                                        </svg></div>
+                                </div>
+                                <div class="bet-empty-content">Phiếu cược của bạn trống.<br>Vui lòng nhấp vào tỷ lệ cược
+                                    trong bảng để đưa ra lựa chọn cược của bạn.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l-10">
+                    <div class="warp-header-body">
+                        <div class="col l-5 match-header-body ">
+                            <div class="math-header-body-warp">
+                                <div class="match-header-body__arrow-header">
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </div>
+                                <div class="match-header-body__content">
+                                    <span>Trận đấu</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-1 header-body__keo">
+                            <div class="header-body__keo__warp">
+                                <span>Kèo chấp TT </span>
+                                <i class="fa-solid fa-circle-info header-body__icon-info"></i>
+                            </div>
+
+                        </div>
+                        <div class="col l-1 header-body__taixiu">
+                            <div class="header-body__taixiu-warp">
+                                <span>Tài Xỉu</span>
+                                <i class="fa-solid fa-circle-info header-body__icon-info"></i>
+                            </div>
+
+                        </div>
+                        <div class="col l-1 header-body__1x2tt">
+                            <div class="header-body__1x2tt-warp">
+                                <span>1x2TT</span>
+                                <i class="fa-solid fa-circle-info header-body__icon-info"></i>
+                            </div>
+                        </div>
+                        <div class="col l-1 header-body__keochap">
+                            <div class="header-body__keochap-warp">
+                                <span>Kèo chấp H1</span>
+                                <i class="fa-solid fa-circle-info header-body__icon-info"></i>
+                            </div>
+
+                        </div>
+                        <div class="col l-1 header-body__taixiuh1">
+                            <div class="header-body__taixiuh1-warp">
+                                <span>Tài xỉu H1</span>
+                                <i class="fa-solid fa-circle-info header-body__icon-info"></i>
+                            </div>
+                        </div>
+                        <div class="col l-1 header-body__1x2h1">
+                            <div class="header-body__1x2h1-warp">
+                                <span>1X2 H1</span>
+                                <i class="fa-solid fa-circle-info header-body__icon-info"></i>
+                            </div>
+                        </div>
+                        <div class="col l-1 no-item"></div>
+                    </div>
+                    <div class="lueage-header">
+                        <div class="row grid wide lueage-header-warp">
+                            <div class="arrow-lueaget-header">
+                                <div class="match-header-body__arrow">
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </div>
+                                <div class="lueage-title">
+                                    <i class="fa-solid fa-star"></i>
+                                    <span>E Soccer Battle 8 mins</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="match-container-warp">
+
+                        <div class="col l-5 ">
+                            <div class="doibong">
+                                <div class="hiep">
+                                    <div class="hiep__tyso">
+                                        <span>3 - 1</span>
+                                    </div>
+                                    <div class="hiep__thoigian">
+                                        <span>2h4'</span>
+                                    </div>
+
+                                </div>
+                                <div class="doibong-warp">
+                                    <div class="doibong-doibong1-warp">
+                                        <span>Manchester City</span>
+                                        <div class="doibong1_button-view-start">
+                                            <div class="doibong1__icon-view">
+                                                <i class="fa-solid fa-eye"></i>
+                                            </div>
+                                            <div class="doibong1__icon-start">
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="doibong-doibong2-warp">
+                                        <span>Bayer Munich FC</span>
+                                        <div class="doibong1_button-record">
+                                            <i class="fa-solid fa-video"></i>
+                                        </div>
+                                    </div>
+                                    <div class="doibong-ketqua-warp">
+                                        <span>Hòa</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col l-3 keo">
+                            <div class="all-keo">
+                                <ul>
+                                    <li style="color: red;">0.0</li>
+                                    <li>3 </li>
+                                    <li>0.3</li>
+                                    <li>4</li>
+                                </ul>
+                                <ul>
+                                    <li style="color: #000; font-weight: 600;">0.2</li>
+                                    <li>2</li>
+                                    <li style="color: #000; font-weight: 600;">0.3</li>
+                                    <li>29</li>
+                                </ul>
+                                <ul>
+                                    <li><br></li>
+                                    <li>0.5</li>
+                                    <li><br></li>
+                                    <li>2.0</li>
+                                </ul>
+                                <ul>
+                                    <li><br></li>
+                                    <li style="color: #000; font-weight: 600;">0.5</li>
+                                    <li><br></li>
+                                    <li style="color: #000; font-weight: 600;">2.0</li>
+                                </ul>
+                                <ul>
+                                    <li><br></li>
+                                    <li><br></li>
+                                    <li><br></li>
+                                    <li><br></li>
+                                </ul>
+                                <ul>
+                                    <li><br></li>
+                                    <li><br></li>
+                                    <li><br></li>
+                                    <li><br></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="col l-3 keo-chap">
+                            <div class="col l1"></div>
+                            <div class="col l1"></div>
+                            <div class="col l1"></div>
+                        </div>
+                        <div class="lock">
+                            <i class="fa-solid fa-lock"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+</body>
+
+</html>

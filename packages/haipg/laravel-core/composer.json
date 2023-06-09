@@ -1,0 +1,29 @@
+{
+    "name": "haipg/laravel-core",
+    "description": "Core Dependencies for Laravel",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Hai Phan",
+            "email": "haiphangia2710@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "HaiPG\\LaravelCore\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "HaiPG\\LaravelCore\\LaravelCoreServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "license": "MIT",
+    "config": {
+        "sort-packages": true
+    },
+    "prefer-stable": true
+}

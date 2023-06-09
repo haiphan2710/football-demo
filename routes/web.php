@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('odds/pre-match', 'OddController@preMatch');
+Route::get('leagues', 'LeagueController@all');
+Route::get('fixtures', 'FixtureController@all');
+

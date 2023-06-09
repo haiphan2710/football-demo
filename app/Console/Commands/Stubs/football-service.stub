@@ -1,0 +1,24 @@
+<?php
+
+namespace DummyNamespace;
+
+use GuzzleHttp\Exception\GuzzleException;
+
+class DummyClass extends BaseApiService
+{
+    protected $mainRoute = '';
+
+    /**
+     * API for {actionName}
+     * Query params: fixture(integer)
+     *
+     * @return array
+     * @throws GuzzleException
+     */
+    public function actionName(): array
+    {
+        return $this->getResponse(
+            $this->client->get($this->mainRoute, ['query' => $this->params ?? []])->getBody()->getContents()
+        );
+    }
+}
