@@ -25,7 +25,11 @@ class OddService extends BaseApiService
         );
     }
 
-    public function bookmakers()
+    /**
+     * @return array
+     * @throws GuzzleException
+     */
+    public function bookmakers(): array
     {
         return $this->getResponse(
             $this->client->get(
